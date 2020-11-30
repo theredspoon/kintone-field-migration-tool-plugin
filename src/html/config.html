@@ -1,12 +1,18 @@
 <section class="settings">
   <h2 class="settings-heading">Settings for Field Migration Tool</h2>
-  <p class="kintoneplugin-desc">This message is displayed on the app page after the app has been updated.</p>
+  <p class="kintoneplugin-desc">Pick a source field to migrate data from and a target field to migrate data to.</p>
   <form class="js-submit-settings">
     <p class="kintoneplugin-row">
-      <label for="message">
-        Message:
-        <input type="text" class="js-text-message kintoneplugin-input-text">
-      </label>
+      <label for="source-fields">Source Field:</label>
+      <select id="sources" name="sources" class="js-text-message kintoneplugin-input-text">
+        <option value="Select a source field..." disabled>Select a source field...</option>
+      </select>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="target-fields">Target Field:</label>
+      <select id="targets" name="targets" class="js-text-message kintoneplugin-input-text">
+        <option value="Select a target field..." disabled>Select a target field...</option>
+      </select>
     </p>
     <p class="kintoneplugin-row">
         <button type="button" class="js-cancel-button kintoneplugin-button-dialog-cancel">Cancel</button>
